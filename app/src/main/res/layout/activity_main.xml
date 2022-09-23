@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="key word" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="150dp"
+            android:text="search"
+            android:textAlignment="center"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="150dp"
+            android:text="Add Images"
+             android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        tools:listitem="@layout/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
